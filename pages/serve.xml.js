@@ -1,7 +1,7 @@
 import { getServerSideSitemap } from "next-sitemap";
 import { fetchAPI } from "../lib/api"
 
-let siteURL = 'https://sonicacts.com'
+let siteURL = 'https://dev-2024.sonicacts.com'
 
 
 export const getServerSideProps = async (ctx) => {

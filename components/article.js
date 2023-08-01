@@ -17,7 +17,7 @@ const Article = ({page, relations, discover, agenda}) => {
 					links[j].classList.add('footnote')
 				}
 				if (links[j].href.includes('.pdf') == true) {
-					links[j].href = 'https://cms.sonicacts.com/uploads/' + links[j].href.substring(links[j].href.lastIndexOf("/") + 1)
+					links[j].href = 'https://cms-dev.sonicacts.com/uploads/' + links[j].href.substring(links[j].href.lastIndexOf("/") + 1)
 				}
 			}
 		}

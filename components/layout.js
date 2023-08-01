@@ -27,8 +27,8 @@ const Layout = ({ children, menus, page, global, relations, festival}) => {
       <meta property="og:type" content="website" />
       <meta property="og:title" content={`${global?.attributes?.title} | ${slugName}`} />
       <meta property="og:description" content={page.attributes?.introTextBig ? page.attributes?.introTextBig : page.attributes?.title ? page.attributes?.title : page.attributes?.name ? page.attributes?.name : global.attributes?.description} />
-      <meta name="image" content={relations?.attributes?.cover_image.data ? 'https://cms.sonicacts.com' + relations.attributes.cover_image.data.attributes.url : 'https://cms.sonicacts.com' + global.attributes.image.data.attributes.url} />
-      <meta property="og:image" content={relations?.attributes?.cover_image?.data ? 'https://cms.sonicacts.com' + relations.attributes.cover_image.data.attributes.url : 'https://cms.sonicacts.com' + global.attributes.image.data.attributes.url} />
+      <meta name="image" content={relations?.attributes?.cover_image.data ? 'https://cms-dev.sonicacts.com' + relations.attributes.cover_image.data.attributes.url : 'https://cms-dev.sonicacts.com' + global.attributes.image.data.attributes.url} />
+      <meta property="og:image" content={relations?.attributes?.cover_image?.data ? 'https://cms-dev.sonicacts.com' + relations.attributes.cover_image.data.attributes.url : 'https://cms-dev.sonicacts.com' + global.attributes.image.data.attributes.url} />
     </Head>
     <section className={`container ${festival?.attributes?.radio ? 'topbanner' : ''}`}>
       <>
